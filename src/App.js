@@ -1,9 +1,14 @@
 import React from "react";
 import { render } from "react-dom";
-
+import SearchParams from "./SearchParams";
 class App extends React.Component {
   render() {
-    return <p>Hello World!!</p>;
+    return (
+      <div>
+        <h1>Adopt Me!</h1>
+        <SearchParams />
+      </div>
+    );
   }
 }
 

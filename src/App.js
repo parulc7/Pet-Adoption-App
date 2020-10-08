@@ -6,13 +6,15 @@ import Details from "./Details";
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <h1>Adopt Me!</h1>
-        <Router>
-          <SearchParams path="/" />
-          <Details path="/details/:id" />
-        </Router>
-      </div>
+      <React.StrictMode>
+        <div>
+          <h1>Adopt Me!</h1>
+          <Router>
+            <SearchParams path="/" />
+            <Details path="/details/:id" />
+          </Router>
+        </div>
+      </React.StrictMode>
     );
   }
 }
